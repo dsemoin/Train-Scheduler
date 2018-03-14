@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Bootstrap link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+  <!-- css link -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Train Scheduler</title>
+  <!-- jquery link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- firebase link -->
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+  <!-- momentjs link -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+<!-- html code including Bootstrap -->
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1>Don't Miss Your Train!</h1>
+            <h3>Follow The Schedule.</h3>   
+        </div>
+        <!-- create a table using Bootstrap -->
+    <div class="table-responsive"></div>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Train-Scheduler</th>
+            </tr>
+        </thead>
+            
+    </table>
+        <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (min)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+        </table>
+
+        <!-- create a form using Bootstrap -->
+        <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Add Train</th>
+                    </tr>
+                </thead>
+            </table>
+     
+            <form>
+                <div class="form-group">
+                        <label for="trainName">Train Name</label>
+                        <input type="name" class="form-control" id="inputName" placeholder="Enter name">
+                    
+                </div>        
+                <div class="form-group">
+                          <label for="destination">Destination</label>
+                          <input type="destination" class="form-control" id="destination" placeholder="Enter destination">
+                </div>
+                <div class="form-group">
+                            <label for="firstTrainTime">First Train Time (HH:mm - military time)</label>
+                            <input type="time" class="form-control" id="time" placeholder="HH:mm - military time">
+                </div>
+                <div class="form-group">
+                            <label for="frequency">Frequency</label>
+                            <input type="frequency" class="form-control" id="frequency" placeholder="">
+                </div>
+            
+                <button class="btn btn-primary" id="submit-form">Submit</button>
+            </form>                             
+
+</body>
+<!-- Javascript link -->
+<script src="assets/javascript/app.js"></script>
+
+</html>
